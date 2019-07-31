@@ -11,7 +11,7 @@ if __name__ == '__main__':
     oiv = run_experiment_oiv(1.0, 2.0, 3.0, 100000)
     ucb1 = run_experiment_ucb1(1.0, 2.0, 3.0, 100000)
     epc_decay = run_experiment_decaying_epsilon(1.0, 2.0, 3.0, 100000)
-    bayesian = run_experiment_decaying_epsilon(1.0, 2.0, 3.0, 100000)
+    bayesian = run_experiment_bayesian(1.0, 2.0, 3.0, 100000)
     
     # log scale plot
     plt.plot(c_1, label = 'eps = 0.1')

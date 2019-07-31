@@ -47,9 +47,9 @@ def run_experiment_eps(m1, m2, m3, eps, N):
     return cumulative_average
 
 if __name__ == '__main__':
-    c_1 = run_experiment(1.0, 2.0, 3.0, 0.1, 100000)
-    c_05 = run_experiment(1.0, 2.0, 3.0, 0.05, 100000)
-    c_01 = run_experiment(1.0, 2.0, 3.0, 0.01, 100000)
+    c_1 = run_experiment_eps(1.0, 2.0, 3.0, 0.1, 100000)
+    c_05 = run_experiment_eps(1.0, 2.0, 3.0, 0.05, 100000)
+    c_01 = run_experiment_eps(1.0, 2.0, 3.0, 0.01, 100000)
     
     # log scale plot
     plt.plot(c_1, label = 'eps = 0.1')
